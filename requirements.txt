@@ -1,0 +1,20 @@
+pandas
+ipykernel
+streamlit
+audio_recorder_streamlit
+langchain
+langchain-groq
+langchain_community
+python-dotenv
+pypdf
+openai
+langchain-openai
+# PyPDF2
+chromadb
+# faiss-gpu
+#sentence-transformers
+# huggingface_hub
+# langchain_chroma
+# langchain-groq
+langchain_huggingface
+gTTS
