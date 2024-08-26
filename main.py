@@ -18,9 +18,10 @@ import os
 from pathlib import Path
 
 # Load environment variables
-load_dotenv()
-os.environ['OPENAI_API_KEY'] = os.getenv("OPENAI_API_KEY")
-os.environ['GROQ_API_KEY'] = os.getenv("GROQ_API_KEY")
+#load_dotenv()
+#os.environ['OPENAI_API_KEY'] = os.getenv("OPENAI_API_KEY")
+#os.environ['GROQ_API_KEY'] = os.getenv("GROQ_API_KEY")
+st.secrets['OPENAI_API_KEY']
 
 # Initialize OpenAI client
 client = OpenAI()
@@ -36,7 +37,7 @@ self_reference_queries = [
 # Initialize models and data using the new pipeline
 @st.cache_resource
 def load_models():
-    groq_api_key = os.getenv("GROQ_API_KEY")
+    groq_api_key = st.secrets['GROQ_API_KEY']
     llm = ChatGroq(groq_api_key=groq_api_key, model_name="Llama3-70b-8192")
 
     # Load and split documents
