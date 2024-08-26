@@ -21,7 +21,7 @@ from pathlib import Path
 #load_dotenv()
 #os.environ['OPENAI_API_KEY'] = os.getenv("OPENAI_API_KEY")
 #os.environ['GROQ_API_KEY'] = os.getenv("GROQ_API_KEY")
-st.secrets['OPENAI_API_KEY']
+openai_api_key = st.secrets['OPENAI_API_KEY']
 
 # Initialize OpenAI client
 client = OpenAI()
