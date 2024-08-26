@@ -14,7 +14,7 @@ chromadb
 # faiss-gpu
 #sentence-transformers
 # huggingface_hub
-# langchain_chroma
+langchain_chroma
 # langchain-groq
 langchain_huggingface
 gTTS
