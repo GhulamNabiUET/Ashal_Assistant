@@ -18,5 +18,3 @@ chromadb
 # langchain-groq
 langchain_huggingface
 gTTS
-sqlite3==3.35.0
-protobuf==3.20.*
