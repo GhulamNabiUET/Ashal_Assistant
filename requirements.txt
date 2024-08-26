@@ -18,3 +18,4 @@ chromadb
 # langchain-groq
 langchain_huggingface
 gTTS
+pip install protobuf==3.20.*
