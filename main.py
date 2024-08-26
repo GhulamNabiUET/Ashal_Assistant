@@ -17,9 +17,6 @@ from dotenv import load_dotenv
 import os
 from pathlib import Path
 
-import os
-os.environ["PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION"] = "python"
-
 
 # Load environment variables
 #load_dotenv()
@@ -45,7 +42,7 @@ def load_models():
     llm = ChatGroq(groq_api_key=groq_api_key, model_name="Llama3-70b-8192")
 
     # Load and split documents
-    loader = PyPDFDirectoryLoader('D:/Virtual Assistent/Groq/knowledge_base')
+    loader = PyPDFDirectoryLoader('./knowledge_base')
     docs = loader.load()
     text_splitter = RecursiveCharacterTextSplitter(chunk_size=2000, chunk_overlap=200)
     splits = text_splitter.split_documents(docs)
