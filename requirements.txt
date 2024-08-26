@@ -1,6 +1,5 @@
 pandas
 ipykernel
-streamlit
 audio_recorder_streamlit
 langchain
 langchain-groq
@@ -18,3 +17,4 @@ chromadb
 langchain_chroma
 # langchain-groq
 langchain_huggingface
+streamlit==1.29.0
