@@ -17,6 +17,10 @@ from dotenv import load_dotenv
 import os
 from pathlib import Path
 
+import os
+os.environ["PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION"] = "python"
+
+
 # Load environment variables
 #load_dotenv()
 #os.environ['OPENAI_API_KEY'] = os.getenv("OPENAI_API_KEY")
