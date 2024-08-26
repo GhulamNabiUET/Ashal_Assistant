@@ -9,6 +9,7 @@ python-dotenv
 pypdf
 openai
 langchain-openai
+faiss-cpu
 # PyPDF2
 chromadb
 # faiss-gpu
